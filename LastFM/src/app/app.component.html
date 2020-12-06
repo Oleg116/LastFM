@@ -1,0 +1,201 @@
+<style type="text/css">
+  html{
+    background-color: #2aa543;
+  }
+  .jumbotron {
+  position: absolute;
+  top: 80px;
+  width: 70%;
+  background: rgb(233,236,239);
+  background: linear-gradient(90deg, rgba(233,236,239,0.9136029411764706) 0%, rgba(9,9,121,0) 100%, rgba(0,212,255,1) 100%);
+  -webkit-box-shadow: -4px 3px 19px 4px linear-gradient(90deg, rgba(233,236,239,0.9136029411764706) 0%, rgba(9,9,121,0) 100%, rgba(0,212,255,1) 100%); 
+  box-shadow: -4px 3px 19px 4px linear-gradient(90deg, rgba(233,236,239,0.9136029411764706) 0%, rgba(9,9,121,0) 100%, rgba(0,212,255,1) 100%);
+  }
+
+  p {
+    font-size: 18px;
+    text-shadow: 1px 2px 3px #fff;
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+  }
+
+  .btn-jumb {
+    width: 100px;
+  }
+
+
+  .nav {
+    width: 200px;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+
+  .nav-tabs {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+  .flex-column {
+    display: none;
+  }
+  .jumbotron {
+    top: 120px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .jumbotron{
+    display: none;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 250px;
+  background-color: #343a40;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > div > div > ul > li> a {
+  color: #2aa543;
+  text-decoration: none;
+}
+
+  .table {
+    border-left: 1px solid #2f9d45;
+  }
+  .first-row {
+    margin-left: 0px 300px;
+  }
+
+  th {
+    padding: 5px 12px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+  }
+  footer {
+   
+  }
+
+  .footer-column {
+    margin: 0px 50px;
+  }
+</style>
+
+
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand">LastFM</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
+  <img src="https://news-cdn.softpedia.com/images/news2/data-of-43-million-users-stolen-during-2012-last-fm-data-breach-507830-3.jpg" class="img-fluid" alt="Responsive image">
+  <div class="jumbotron">
+    <h1 class="display-4">LastFM</h1>
+    <p class="lead">Here You can find your favourite tracks.</p>
+    <hr class="my-4">
+    <p>Just press "Explore" button to find your track and download it.</p>
+    <a class="btn btn-outline-success my-2 my-sm-0 btn-jumb" href="#" role="button">Explore</a>
+  </div>
+  <div class="flex-row"> 
+    <div> 
+        <ul class="nav flex-column bg-dark">
+        <li class="nav-item">
+          <a class="nav-link  btn-outline-success" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  btn-outline-success" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  btn-outline-success" href="#">Link</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link  btn-outline-success" href="#">Link</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link  btn-outline-success" href="#">Link</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link  btn-outline-success" href="#">Link</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link  btn-outline-success" href="#">Link</a>
+        </li>
+      </ul>
+      </div>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col"><span class="first-row">Popular tracks</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>TrackName</td>
+      <td>Author</td>
+      <td>length</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>TrackName</td>
+      <td>Author</td>
+      <td>length</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>TrackName</td>
+      <td>Author</td>
+      <td>length</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>TrackName</td>
+      <td>Author</td>
+      <td>length</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>TrackName</td>
+      <td>Author</td>
+      <td>length</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="footer">
+  <div class="footer-row">
+    <div class="footer-column">
+      <ul>
+        <li><a href="#">Fotter link 1</a></li>
+        <li><a href="#">Fotter link 2</a></li>
+        <li><a href="#">Fotter link 3</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
